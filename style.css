@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+}
+body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #FFFFFF;
+    max-width: 450px;
+    width: 87.2vw;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container img {
+    width: 100%;
+}
+h1 {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 29px;
+  text-align: center;
+  margin: 16px 32px 16px 32px;
+}
+p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #717FA6;
+  margin: 0 32px;
+}
+.music-box {
+  width: calc(100%-48px);
+  height: 81px;
+  background-color: #F7F9FF;
+  border-radius: 11px;
+  margin: 24px 24px;
+  position: relative
+}
+.music-box img {
+    width: 48px;
+    height: 48px;
+    margin: 16px 20px 16px 16px;
+}
+submit {
+    font-size: 15px;
+    line-height: 17.2px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #382AE1;
+    display: inline-block;
+    position: absolute;
+    top: 40.74%;
+    left: 77.06%;
+
+}
+submit:hover {
+    color: #766CF1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+
+}
+.music-box div {
+    font-size: 15px;
+    line-height: 17.2px;
+    font-weight: 700;
+    
+}
+.music-box div:nth-of-type(1) {
+    position:absolute;
+    top: 25.92%;
+    left: 30.11%;
+}
+.music-box div:nth-of-type(2) {
+    position:absolute;
+    top: 53.08%;
+    left: 30.11%;
+}
+.payment {
+    width: calc(100%-48px);
+    border-radius: 11px;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 50px;
+    color: #FFFFFF;
+    background-color: #382AE1;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    margin: 0 24px 24px 24px;
+}
+.payment:hover {
+    background-color: #766CF1;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.cancel {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #717FA6;
+    margin: 24px 0 32px 0;
+}
+.cancel:hover {
+    color: #1F2E55;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+
+@media only screen and (min-width: 375px) {
+    body {
+    background-image: url(images/pattern-background-desktop.svg);
+    }
+    h1 {
+    font-size: 28px;
+    line-height: 37px;
+    margin: 45px 48px 17px 48px;
+    }
+    .music-box {
+        height: 98px;
+        margin: 32px 24px;
+    }
+    .music-box img {
+        margin: 25px 20px 25px 24px;
+    }
+    .payment {
+        margin: 32px 24px;
+    }
+}
